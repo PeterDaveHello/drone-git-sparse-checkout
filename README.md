@@ -3,7 +3,7 @@ drone-git-sparseCheckout
 
 ![license](https://img.shields.io/badge/license-GPLv3.0-brightgreen.svg?style=flat)
 
-A [Drone](https://drone.io) CI plugin to give the ability to use [git](https://en.wikipedia.org/wiki/Git)'s [sparseCheckout](https://git-scm.com/docs/git-read-tree#_sparse_checkout) feature.
+A [Drone](https://drone.io) CI v0.5 plugin to give the ability to use [git](https://en.wikipedia.org/wiki/Git)'s [sparseCheckout](https://git-scm.com/docs/git-read-tree#_sparse_checkout) feature.
 
 ## How to
 
