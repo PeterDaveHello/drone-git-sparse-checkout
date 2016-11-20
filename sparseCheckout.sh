@@ -29,7 +29,6 @@ if [ ! -d ".git" ]; then
     git pull origin "${DRONE_COMMIT_BRANCH}" --depth="${PLUGIN_DEPTH}"
 else
     echo "${PLUGIN_SPARSECHECKOUT}" > ".git/info/sparse-checkout"
-    git reset --hard
     git fetch origin --depth="${PLUGIN_DEPTH}"
 fi
 
