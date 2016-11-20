@@ -33,6 +33,7 @@ else
     git fetch origin --depth="${PLUGIN_DEPTH}"
 fi
 
+git checkout -qf "${DRONE_COMMIT_SHA}"
 cat "${PLUGIN_SPARSECHECKOUT}" >> ".git/info/sparse-checkout"
 git checkout -qf "${DRONE_COMMIT_SHA}"
 
