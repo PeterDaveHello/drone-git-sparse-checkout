@@ -28,6 +28,9 @@ if [ ! -d ".git" ]; then
     echo "${PLUGIN_SPARSECHECKOUT}" > ".git/info/sparse-checkout"
     git pull origin "${DRONE_COMMIT_BRANCH}" --depth="${PLUGIN_DEPTH}"
 else
+    if [ -n "${DRONE_PULL_REQUEST}" ]; then
+        DRONE_COMMIT_BRANCH="pull/${DRONE_PULL_REQUEST}/head:${DRONE_PULL_REQUEST}"
+    fi
     echo "${PLUGIN_SPARSECHECKOUT}" > ".git/info/sparse-checkout"
     git fetch origin "${DRONE_COMMIT_BRANCH}" --depth="${PLUGIN_DEPTH}"
 fi
