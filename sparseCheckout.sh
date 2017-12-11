@@ -12,7 +12,7 @@ DEFAULT_CLONE_DEPTH=30
     exit 1
 }
 
-if [ "{$CI}" != "drone" ] && [ "${DRONE}" != "true" ]; then
+if [ "${CI}" != "drone" ] && [ "${DRONE}" != "true" ]; then
     err "Not a Drone CI environment"
     env
     exit 1
