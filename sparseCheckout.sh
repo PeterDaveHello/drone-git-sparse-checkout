@@ -37,8 +37,8 @@ fi
 
 git fetch origin "${DRONE_REPO_BRANCH}" --depth="${PLUGIN_DEPTH}"
 
-if echo "${DRONE_REPO_LINK}" | grep 'github.com' &> /dev/null; then
-    wget ${DRONE_REPO_LINK}/raw/${DRONE_COMMIT_SHA}/${PLUGIN_SPARSECHECKOUT} -O- | cat >> ".git/info/sparse-checkout"
+if echo "${DRONE_REPO_LINK}" | grep 'github.com' 2>&1 /dev/null; then
+    wget "${DRONE_REPO_LINK}/raw/${DRONE_COMMIT_SHA}/${PLUGIN_SPARSECHECKOUT}" -O- | cat >> ".git/info/sparse-checkout"
 else
     git checkout -qf "${DRONE_COMMIT_SHA}"
     cat "${PLUGIN_SPARSECHECKOUT}" >> ".git/info/sparse-checkout"
