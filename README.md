@@ -1,7 +1,7 @@
 drone-git-sparseCheckout
 ========================
 
-![license](https://img.shields.io/badge/license-GPLv3.0-brightgreen.svg?style=flat)
+![license](https://img.shields.io/badge/license-GPLv3.0-brightgreen.svg?style=flat) [![](https://img.shields.io/docker/pulls/peterdavehello/drone-git-sparse-checkout.svg)](https://hub.docker.com/r/peterdavehello/drone-git-sparse-checkout/) [![](https://images.microbadger.com/badges/image/peterdavehello/drone-git-sparse-checkout.svg)](https://microbadger.com/images/peterdavehello/drone-git-sparse-checkout/) [![](https://images.microbadger.com/badges/version/peterdavehello/drone-git-sparse-checkout.svg)](https://hub.docker.com/r/peterdavehello/drone-git-sparse-checkout/tags/)
 
 A [Drone](https://drone.io) CI v0.5 plugin to give the ability to use [git](https://en.wikipedia.org/wiki/Git)'s [sparseCheckout](https://git-scm.com/docs/git-read-tree#_sparse_checkout) feature.
 
