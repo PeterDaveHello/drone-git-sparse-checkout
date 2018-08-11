@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-MAINTAINER Peter Dave Hello <hsu@peterdavehello.org>
+LABEL maintainer="Peter Dave Hello <hsu@peterdavehello.org>"
 RUN mkdir -p    /root/.ssh/
 COPY known_hosts /root/.ssh/
 COPY sparseCheckout.sh /bin/
