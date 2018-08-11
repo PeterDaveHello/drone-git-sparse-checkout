@@ -1,6 +1,8 @@
 FROM alpine:3.8
 
 LABEL maintainer="Peter Dave Hello <hsu@peterdavehello.org>"
+LABEL name="Drone Git sparseCheckout"
+LABEL version="latest"
 RUN mkdir -p    /root/.ssh/
 COPY known_hosts /root/.ssh/
 COPY sparseCheckout.sh /bin/
