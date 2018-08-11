@@ -13,4 +13,4 @@ RUN echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repo
 
 RUN git --version
 
-ENTRYPOINT /bin/sparseCheckout.sh
+ENTRYPOINT ["/bin/sparseCheckout.sh"]
